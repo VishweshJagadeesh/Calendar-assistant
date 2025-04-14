@@ -105,13 +105,13 @@ graph=graph_builder.compile(checkpointer=memory)
 config = {"configurable": {"thread_id": "1"}}
 graph.stream({'messages':[{'role':"user",'content':'I need you to remeber what time it is now.'}]}
                             ,config,stream_mode='values')
-while True:
-  user_input=input("User: ")
-  if user_input.lower() in ["quit","q"]:
-    print("Good Bye")
-    break
-  for event in graph.stream({'messages':[{'role':"user",'content':user_input}]}
-                            ,config,stream_mode='values'):
-    for value in event.values():
-      pass
-  print("Assistant:",value[-1].content)
+# while True:
+#   user_input=input("User: ")
+#   if user_input.lower() in ["quit","q"]:
+#     print("Good Bye")
+#     break
+#   for event in graph.stream({'messages':[{'role':"user",'content':user_input}]}
+#                             ,config,stream_mode='values'):
+#     for value in event.values():
+#       pass
+#   print("Assistant:",value[-1].content)
