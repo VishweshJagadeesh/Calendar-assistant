@@ -25,7 +25,7 @@ Save it somewhere locally (not in the repo!)
 
 Set the path in your .env as GOOGLE_CREDENTIALS_PATH=path/to/that/file.json
 
-#Running the Bot
+# Running the Bot
 Once set up, run the bot with:
 
 python ui.py
