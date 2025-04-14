@@ -41,6 +41,7 @@ This repo includes .gitignore rules to keep sensitive files safe.
 
 GROQ_API_KEY=your-groq-api-key
 GOOGLE_CREDENTIALS_PATH=credentials.json
+
 🧠 How it Works
 Uses LangGraph to build a dynamic agent flow
 
